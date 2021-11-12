@@ -1,0 +1,13 @@
+.component-item {
+  margin: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &--info {
+    display: flex;
+    flex-direction: column;
+  }
+}

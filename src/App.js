@@ -1,11 +1,12 @@
 import './App.css';
 // Components
-import Button from './components/js/Button';
+import Home from './containers/js/Home';
+
 
 function App() {
   return (
     <div className="App">
-      <Button text="test"/>
+      <Home />
     </div>
   );
 }
