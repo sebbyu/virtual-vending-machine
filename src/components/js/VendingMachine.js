@@ -39,7 +39,7 @@ export default function VendingMachine(props) {
         </div>
         <div className="component-vendingmachine--messagebox--message">
           <span id="logo">
-            <Logo logoName="text"/>
+            <Logo logoName="info"/>
           </span>
         </div>
         <div className="component-vendingmachine--messagebox--items">

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 // Components
 import Home from './containers/js/Home';
 
