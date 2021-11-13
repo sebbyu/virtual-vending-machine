@@ -2,7 +2,6 @@
   margin: 30px;
   width: 70%;
   height: 600px;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 8fr 2fr;
   &--itembox {
@@ -14,10 +13,15 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     &--money {
-      border-bottom: 1px solid black;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
     &--message {
-      border-bottom: 1px solid black;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+    &--items {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
   }
 }

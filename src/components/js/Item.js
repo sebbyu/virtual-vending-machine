@@ -9,11 +9,16 @@ export default function Item(props) {
   return (
     <div className="component-item" onClick={handleClick}>
       <div className="component-item--image">
-        <p>test image</p>
+        <img src={props.image} alt="null" />
       </div>
       <div className="component-item--info">
-        <i>{props.name}</i>
-        <i>{props.price}</i>
+        {props.quantity === 0 ? 
+        <i style={{color: "red"}}>OUT OF STOCK</i> : 
+        <div id="quantity_more_than_zero">
+          <i>{props.name}</i>
+          <i>{props.price}</i>
+        </div>}
+        
       </div>
     </div>
   )

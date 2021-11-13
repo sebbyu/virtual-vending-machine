@@ -1,13 +1,27 @@
 .component-item {
-  margin: 10px;
-  border: 1px solid black;
+  margin: 5px;
   cursor: pointer;
   transition: 0.2s ease;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   &:hover {
     transform: scale(1.05);
+  }
+  &--image {
+    img {
+      width: 50%;
+      height: 130px;
+    }
   }
   &--info {
     display: flex;
     flex-direction: column;
   }
+}
+
+#quantity_more_than_zero {
+  display: flex;
+  flex-direction: column;
 }
